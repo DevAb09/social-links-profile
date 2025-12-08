@@ -68,17 +68,29 @@ body {
 
 }
 
-.buttons-container a {
+button {
     width: 100%;
     border-radius: 10px;
     background-color: hsl(0, 0%, 20%);
+    color: white;
     padding: 15px;
     font-weight: bold;
     transition: all 0.1s ease-in-out;
     cursor: pointer;
+    border: none;
 }
 
-.buttons-container  a:hover{
+button:hover{
     background-color: hsl(75, 94%, 57%);
     color: hsl(0, 0%, 8%);
 }
+
+    @media only screen and (max-width: 425px) {
+    .container {
+     padding: 25px;
+    }
+   
+    button {
+     height: 60px;
+    }
+   }
